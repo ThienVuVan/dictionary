@@ -38,13 +38,13 @@
                     android:layout_height="24dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/audio" />
+                    android:background="@drawable/ic_volume" />
 
                 <ImageButton
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/audio" />
+                    android:background="@drawable/ic_favor" />
         </LinearLayout>
 
 
