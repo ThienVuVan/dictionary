@@ -10,7 +10,8 @@
 
                 <CheckBox
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemCheck"/>
 
                 <LinearLayout
                     android:layout_width="248dp"
@@ -23,14 +24,16 @@
                             android:layout_height="wrap_content"
                             android:text="item"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/txtWord"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4sp"
                             android:text="item"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            android:id="@+id/txtDefine"/>
                 </LinearLayout>
 
                 <ImageButton
@@ -38,13 +41,15 @@
                     android:layout_height="24dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/ic_volume" />
+                    android:background="@drawable/ic_volume"
+                    android:id="@+id/SpeakerButton"/>
 
                 <ImageButton
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/ic_favor" />
+                    android:background="@drawable/ic_favor"
+                    android:id="@+id/btnAddtoFavar"/>
         </LinearLayout>
 
 

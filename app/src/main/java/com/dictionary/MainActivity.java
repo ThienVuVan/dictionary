@@ -1,5 +1,6 @@
 package com.dictionary;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
@@ -13,20 +14,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.word_trans);
 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        // Loại bỏ tiểu đề mặc định
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-        toolbar.setTitleTextColor(ContextCompat.getColor(this,R.color.white));
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"ádđ",Toast.LENGTH_SHORT).show();
-            }
-        });
+//        toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        // Loại bỏ tiểu đề mặc định
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
+//
+//        toolbar.setTitleTextColor(ContextCompat.getColor(this,R.color.white));
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this,"ádđ",Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 }
