@@ -8,25 +8,38 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.content.Context;
 
 import com.dictionary.R;
+import com.dictionary.model.History;
+import com.dictionary.model.Word;
+
+import java.util.ArrayList;
 
 public class HistoryAdapter extends BaseAdapter {
     private Activity activity;
+    private ArrayList<Word> data;
     private LayoutInflater inflater;
+
+    public HistoryAdapter(Activity activity, ArrayList<Word> data) {
+        this.activity = activity;
+        this.data = data;
+        this.inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
+
     @Override
     public int getCount() {
-        return 0;
+        return data.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return data.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return data.get(position).getId();
     }
 
     @Override
@@ -35,11 +48,11 @@ public class HistoryAdapter extends BaseAdapter {
         if(v ==null){
             v = inflater.inflate(R.layout.item_dic,null);
         }
-        CheckBox check = v.findViewById(R.id.itemCheck);
         TextView txtWord =v.findViewById(R.id.txtWord);
+        txtWord.setText(data.get(position).getOriginal_text());
         TextView txtDefine =v.findViewById(R.id.txtDefine);
-        ImageButton audio = v.findViewById(R.id.SpeakerButton);
-        ImageButton fava = v.findViewById(R.id.favorButton);
+        txtDefine.setText(data.get(position).getDefinition());
+
 
         return v;
     }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/primary"
     >
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -12,7 +13,7 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/top_navigation_bar_name_tu_cua_ban"
+            app:title="@string/top_navigation_bar_name_tu_da_tra"
             app:navigationIcon="@drawable/icons8_search"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
     </com.google.android.material.appbar.AppBarLayout>
@@ -20,6 +21,7 @@
     <include layout="@layout/headerbar_layout" />
 
     <ListView
+        android:id="@+id/listHistory"
         android:layout_width="389dp"
         android:layout_height="456dp"
         android:layout_gravity="center"
